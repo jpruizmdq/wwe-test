@@ -1,0 +1,48 @@
+@import './variables';
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  &__icon {
+    color: $white;
+  }
+  &__main-text {
+    @extend .title;
+    color: $white;
+    text-shadow: 2px 2px 4px $black;
+    width: 50vw;
+  }
+  &__separator {
+    border:none;
+    height: 5px;
+    margin: 0px;
+    background-color: $default-red;
+    width: 40vw;
+  }
+  &__actions {
+    &__join-legend {
+      font-size: 14px;
+      font-style: italic;
+      display: block;
+      color: $white;
+      text-align: center;
+      text-shadow: 1px 1px 2px $black;
+    }
+    &__live-image {
+      height: 70px;
+    }
+    &__live-content {
+      &__title {
+        @extend .is-uppercase, .has-text-weight-light;
+        color: $default-red;
+      }
+      &__subtitle {
+        color: $white;
+      }
+    }
+
+  }
+}

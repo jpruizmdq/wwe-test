@@ -1,0 +1,15 @@
+
+.wwe-button {
+  @extend .button;
+  @extend .is-danger;
+  border-radius: 0px;
+  border: 0px;
+  background-color: $default-red;
+  &:hover {
+    background-color: $default-red;
+  }
+}
+
+.wwe-button.is-large {
+  font-size: 20px;
+}

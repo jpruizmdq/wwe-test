@@ -1,0 +1,27 @@
+@import './variables';
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $black;
+  padding: 10px 15vw;
+  &__left {
+    @extend .is-hidden-mobile;
+    display: flex;
+    align-items: center;
+    &__image {
+      height: 30px;
+    }
+  }
+  &__right {
+    @extend .is-hidden-mobile;
+    display: flex;
+    align-items: center;
+    &__text {
+     font-weight: bold;
+     font-size: 14px;
+     padding-right: 10px;
+    }
+  }
+}
