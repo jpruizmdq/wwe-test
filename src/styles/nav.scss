@@ -1,25 +1,25 @@
 @import './variables';
 
 .navigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @extend .level;
   background-color: $black;
-  padding: 10px 15vw;
+  padding: 2vh 10vw;
+  margin: 0px !important;
   position: fixed;
-  top: 0px;
+  top: 0;
   width: 100%;
-  height: $nav-height;
+  height: $nav-height-mobile;
+  @media screen and (min-width: $mobile-max-width) {
+    height: $nav-height;
+  }
   &__left {
-    display: flex;
-    align-items: center;
+    @extend .level-left;
     &__image {
       height: 30px;
     }
   }
   &__right {
-    display: flex;
-    align-items: center;
+    @extend .level-right;
     &__text {
      font-weight: bold;
      font-size: 14px;
