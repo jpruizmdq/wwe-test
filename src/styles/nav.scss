@@ -8,6 +8,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
   height: $nav-height-mobile;
   @media screen and (min-width: $mobile-max-width) {
     height: $nav-height;

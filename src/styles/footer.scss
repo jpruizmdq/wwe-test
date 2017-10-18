@@ -1,6 +1,7 @@
 .footer {
   padding: 1vh 15vw;
   background-color: $black;
+  z-index: 2;
   p, strong {
     color: $white;
   }
