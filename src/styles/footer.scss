@@ -1,6 +1,31 @@
 .footer {
+  padding: 1vh 15vw;
   background-color: $black;
   p, strong {
     color: $white;
   }
+
+  p {
+    padding: 2vh 2vw;
+  }
+
+  &__blur {
+    background-color: $black;
+    filter: blur(10px);
+  }
+
+  @media screen and (min-width: $mobile-max-width) {
+    &__v-separator
+    {
+        content: "";
+        display: inline-block;
+        width: 0px;
+        height: 70%;
+        border-right: 1px solid #fafafa;
+        border-left: 1px solid #b4b4b4;
+        padding: 0;
+    }
+  }
+
+
 }

@@ -6,8 +6,11 @@
   justify-content: space-between;
   background-color: $black;
   padding: 10px 15vw;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: $nav-height;
   &__left {
-    @extend .is-hidden-mobile;
     display: flex;
     align-items: center;
     &__image {
@@ -15,7 +18,6 @@
     }
   }
   &__right {
-    @extend .is-hidden-mobile;
     display: flex;
     align-items: center;
     &__text {

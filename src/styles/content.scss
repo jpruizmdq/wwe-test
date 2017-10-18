@@ -6,11 +6,14 @@
   align-content: flex-end;
   flex-direction: column;
   align-items: center;
+  margin-top: $nav-height;
   &__icon {
+    padding-top: 10vh;
     color: $white;
   }
   &__main-text {
     @extend .title;
+    font-size: 2.5vw;
     color: $white;
     text-shadow: 2px 2px 4px $black;
     width: 50vw;
@@ -23,7 +26,12 @@
     width: 40vw;
   }
   &__actions {
+    &__live-box {
+      display: flex;
+      flex-wrap: wrap;
+    }
     &__join-legend {
+      margin-right: 10px;
       font-size: 14px;
       font-style: italic;
       display: block;
@@ -33,14 +41,20 @@
     }
     &__live-image {
       height: 70px;
+      display: inline;
     }
     &__live-content {
+      display: flex;
+      flex-direction: column;
       &__title {
-        @extend .is-uppercase, .has-text-weight-light;
+        @extend .is-uppercase;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px $black;
         color: $default-red;
       }
       &__subtitle {
         color: $white;
+        text-shadow: 1px 1px 2px $black;
       }
     }
 

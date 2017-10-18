@@ -1,11 +1,10 @@
-@import '../../node_modules/bulma/bulma.sass';
 @import './variables';
 @import './overrides';
-$family-sans-serif: 'Roboto-Regular';
-@import './fonts.scss';
-@import './buttons.scss';
-@import './nav.scss';
-@import './content.scss';
+@import '../../node_modules/bulma/bulma.sass';
+@import './fonts';
+@import './buttons';
+@import './nav';
+@import './content';
 @import './footer';
 
 body, html {
@@ -23,6 +22,15 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.backdrop {
+  position: absolute;
+  top:0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
 }
 
 .page-container {
