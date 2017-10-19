@@ -1,5 +1,6 @@
 @import './variables';
-
+$padding-top-mobile: 2*$nav-height-mobile;
+$padding-top: 2*$nav-height;
 .content {
   display: flex;
   flex-grow: 2;
@@ -9,9 +10,9 @@
   align-items: center;
   z-index: 2;
   position: relative;
-  padding-top: $nav-height-mobile+30px;
-  @media screen and (min-width: $mobile-max-width) {
-    padding-top: $nav-height+60px;
+  padding-top: $padding-top;
+  @media screen and (max-width: $mobile-max-width) {
+    padding-top: $padding-top-mobile;
   }
   &__icon {
     padding-top: 10vh;
@@ -23,13 +24,13 @@
     text-align: center;
     font-family: 'DejaVu Sans';
     font-weight: 700;
-    @media screen and (max-width: $mobile-max-width) {
-      font-size: 1rem;
-    }
     color: $white;
     text-shadow: 2px 2px 4px $black;
     width: 30vw;
     padding: 20px 0px;
+    @media screen and (max-width: $mobile-max-width) {
+      width: 60vw;
+    }
   }
   &__separator {
     border:none;
@@ -38,6 +39,10 @@
     background-color: $default-red;
     width: 25vw;
     margin-top: 20vh;
+    @media screen and (max-width: $mobile-max-width) {
+        margin-top: 5vh;
+        width: 40vw;
+    }
   }
   &__actions {
     &__live-box {
