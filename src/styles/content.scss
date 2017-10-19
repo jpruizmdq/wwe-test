@@ -71,11 +71,13 @@ $padding-top: 2*$nav-height;
         font-weight: 500;
         text-shadow: 1px 1px 2px $black;
         color: $default-red;
+        font-family: 'DejaVu sans';
       }
       &__subtitle {
         color: $white;
         text-shadow: 1px 1px 2px $black;
         font-size: 0.8rem;
+        font-family: 'DejaVu sans';
       }
     }
 
