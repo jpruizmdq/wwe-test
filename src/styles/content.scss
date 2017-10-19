@@ -2,11 +2,13 @@
 
 .content {
   display: flex;
+  flex-grow: 2;
   justify-content: center;
   align-content: flex-end;
   flex-direction: column;
   align-items: center;
   z-index: 2;
+  position: relative;
   padding-top: $nav-height-mobile+30px;
   @media screen and (min-width: $mobile-max-width) {
     padding-top: $nav-height+60px;
@@ -17,20 +19,25 @@
   }
   &__main-text {
     @extend .title;
-    font-size: 3vw;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'DejaVu Sans';
+    font-weight: 700;
     @media screen and (max-width: $mobile-max-width) {
-      font-size: 5vw;
+      font-size: 1rem;
     }
     color: $white;
     text-shadow: 2px 2px 4px $black;
-    width: 50vw;
+    width: 30vw;
+    padding: 20px 0px;
   }
   &__separator {
     border:none;
     height: 5px;
     margin: 0px;
     background-color: $default-red;
-    width: 40vw;
+    width: 25vw;
+    margin-top: 20vh;
   }
   &__actions {
     &__live-box {
@@ -39,7 +46,7 @@
     }
     &__join-legend {
       margin-right: 10px;
-      font-size: 14px;
+      font-size: 12px;
       font-style: italic;
       display: block;
       color: $white;
@@ -49,6 +56,7 @@
     &__live-image {
       height: 70px;
       display: inline;
+      margin-right: 20px;
     }
     &__live-content {
       display: flex;
@@ -62,6 +70,7 @@
       &__subtitle {
         color: $white;
         text-shadow: 1px 1px 2px $black;
+        font-size: 0.8rem;
       }
     }
 
