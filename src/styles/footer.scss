@@ -37,15 +37,13 @@
   }
 
   &__bg {
-    background-image: url('../images/footer-bg.png');
+    background-image: url('../images/bg_footer.png');
     position: absolute;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    background-position: center right;
     z-index: -1;
-    filter: blur(80px);
   }
 
 
